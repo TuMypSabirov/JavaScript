@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <!-- В переменной day лежит какое-то число из интервала от 1 до 31. 
+    Определите в какую декаду месяца попадает это число (в первую, вторую или третью). -->
+
+    <script>
+        let day = Number(prompt('Какое сегодня число?'));
+        if (day > 0 && day <= 31) {
+            if (day > 0 && day <= 10) {
+                console.log(`Первая декада`);
+            } else {
+                if (day > 10 && day <= 20) {
+                    console.log(`Вторая декада`);
+                } else {
+                    if (day > 20 && day <= 31) {
+                        console.log(`Третья декада`)
+                    }
+                }
+            }
+        } else {
+            console.log(`В месяце нет столько дней`)
+        }
+    </script>
+</body>
+
+</html>
